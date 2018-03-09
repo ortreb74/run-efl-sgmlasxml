@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<item type="SYSTEM" id="SGMLDECL" uri="/usr/local/DTD/dtd/efl.dec"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Added Latin 1//EN" uri="Isolat1.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Added Latin 2//EN" uri="Isolat2.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Numeric and Special Graphic//EN"
+		uri="Isonum.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Greek Letters//EN" uri="Isogrk1.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Monotoniko Greek//EN" uri="Isogrk2.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Greek Symbols//EN" uri="Isogrk3.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Alternative Greek Symbols//EN" uri="Isogrk4.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Russian Cyrillic//EN" uri="Isocyr1.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Non-Russian Cyrillic//EN" uri="Isocyr2.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Added Math Symbols: Arrow Relations//EN"
+		uri="Isoamsa.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Added Math Symbols: Binary Operators//EN"
+		uri="Isoamsb.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Added Math Symbols: Delimiters//EN"
+		uri="Isoamsc.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Added Math Symbols: Negated Relations//EN"
+		uri="Isoamsn.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Added Math Symbols: Ordinary//EN"
+		uri="Isoamso.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Added Math Symbols: Relations//EN"
+		uri="Isoamsr.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES General Technical//EN" uri="Isotech.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Publishing//EN" uri="Isopub.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Diacritical Marks//EN" uri="Isodia.ent"/>
+	<item type="PUBLIC" id="ISO 8879-1986//ENTITIES Box and Line Drawing//EN" uri="Isobox.ent"/>
+	<item type="PUBLIC" id="-//Rudolf Haufe Verlag//ENTITIES Haufezeichen 1.0.0//DE"
+		uri="haufezeichen.ent"/>
+	<item type="PUBLIC" id="-//Rudolf Haufe Verlag//ENTITIES EntDef 1.3.0//DE" uri="entdef130.ent"/>
+	<item type="PUBLIC" id="-//Rudolf Haufe Verlag//DTD Verwaltungsanweisungen 1.2.0//DE"
+		uri="va.dtd"/>
+	<item type="PUBLIC" id="-//Rudolf Haufe Verlag//DTD Verwaltungsanweisungen 1.1.0//DE"
+		uri="va.dtd"/>
+	<item type="PUBLIC" id="-//Rudolf Haufe Verlag//DTD Verwaltungsanweisungen 1.0.0//DE"
+		uri="va.dtd"/>
+	<item type="PUBLIC" id="-//Rudolf Haufe Verlag//ELEMENTS Haufe allgemein 1.3.0//DE"
+		uri="haufe130.ent"/>
+	<item type="PUBLIC" id="-//Rudolf Haufe Verlag//DTD Norm 2.3 Richtlinie//DE" uri="norm.dtd"/>
+	<item type="PUBLIC" id="-//Rudolf Haufe Verlag//DTD Norm 2.3 Notenwechsel//DE" uri="norm.dtd"/>
+	<item type="PUBLIC" id="-//Rudolf Haufe Verlag//DTD Norm 2.3 Gesetz Fassung//DE" uri="norm.dtd"/>
+	<item type="PUBLIC" id="-//Rudolf Haufe Verlag//DTD Norm 2.3 Abkommen//DE" uri="norm.dtd"/>
+	<item type="PUBLIC"
+		id="-//Rudolf Haufe Verlag//DTD Rundschreiben-Besprechungsergebnisse 1.1.0//DE"
+		uri="beitrag.dtd"/>
+	<item type="PUBLIC" id="-//ELA//DTD CORNAFCC2008//FR" uri="cornafcc2008.dtd"/>
+	<item type="PUBLIC" id="%ISOlat1" uri="ISOlat1.ent"/>
+	<item type="PUBLIC" id="%ISOlat2" uri="ISOlat2.ent"/>
+	<item type="PUBLIC" id="%ISOnum" uri="ISOnum.ent"/>
+	<item type="PUBLIC" id="%ISOtech" uri="ISOtech.ent"/>
+	<item type="PUBLIC" id="%ISOpub" uri="ISOpub.ent"/>
+	<item type="PUBLIC" id="%memdtd" uri="mem.dtd"/>
+	<item type="PUBLIC" id="%tfr" uri="tfr.dtd"/>
+	<item type="PUBLIC" id="%bull" uri="bull.dtd"/>
+	<item type="PUBLIC" id="%fr" uri="fr.dtd"/>
+	<item type="PUBLIC" id="%iso-num" uri="isonum.ent"/>
+	<item type="PUBLIC" id="%iso-pub" uri="isopub.ent"/>
+	<item type="PUBLIC" id="%iso-la1" uri="isolat1.ent"/>
+	<item type="PUBLIC" id="%iso-la2" uri="isolat2.ent"/>
+	<item type="PUBLIC" id="%iso-gr3" uri="isogrk3.ent"/>
+	<item type="PUBLIC" id="%iso-gr2" uri="isogrk2.ent"/>
+	<item type="PUBLIC" id="%iso-gr4" uri="isogrk4.ent"/>
+	<item type="PUBLIC" id="%iso-gr1" uri="isogrk1.ent"/>
+	<item type="PUBLIC" id="%iso-tec" uri="isotech.ent"/>
+	<item type="PUBLIC" id="%iso-amr" uri="isoamsr.ent"/>
+	<item type="PUBLIC" id="%codesoc" uri="codesoc.ent"/>
+	<item type="DOCTYPE" id="HISTORIQUE" uri="historique.dtd"/>
+	<item type="DOCTYPE" id="TABLEAU" uri="tableau.dtd"/>
+	<item type="DOCTYPE" id="TABLE" uri="tableau.dtd"/>
+	<item type="DOCTYPE" id="ALCODINV" uri="alcodinv.dtd"/>
+	<item type="DOCTYPE" id="BAF" uri="baf.dtd"/>
+	<item type="DOCTYPE" id="BEI" uri="bei.dtd"/>
+	<item type="DOCTYPE" id="BEEI" uri="beei.dtd"/>
+	<item type="DOCTYPE" id="BPIM" uri="bpim.dtd"/>
+	<item type="DOCTYPE" id="BPAT" uri="bpat.dtd"/>
+	<item type="DOCTYPE" id="CCOL" uri="ccol.dtd"/>
+	<item type="DOCTYPE" id="CCOLLIST" uri="ccollist.dtd"/>
+	<item type="DOCTYPE" id="LISTCC" uri="listcc.dtd"/>
+	<item type="DOCTYPE" id="CORNAFCC" uri="cornafcc.dtd"/>
+	<item type="DOCTYPE" id="CORNAFCC2008" uri="cornafcc2008.dtd"/>
+	<item type="DOCTYPE" id="RECMAJ" uri="recmaj.dtd"/>
+	<item type="DOCTYPE" id="DECIS" uri="decis.dtd"/>
+	<item type="DOCTYPE" id="DECISJ" uri="decisj.dtd"/>
+	<item type="DOCTYPE" id="DECIS2" uri="decis2.dtd"/>
+	<item type="DOCTYPE" id="DECIS3" uri="decis3.dtd"/>
+	<item type="DOCTYPE" id="DECIS4" uri="decis4.dtd"/>
+	<item type="DOCTYPE" id="DECIS8" uri="decis8.dtd"/>
+	<item type="DOCTYPE" id="CDCOLL" uri="cdcoll.dtd"/>
+	<item type="DOCTYPE" id="SUBSCRIPTION" uri="subscription.dtd"/>
+	<item type="DOCTYPE" id="EXTERNAL" uri="external.dtd"/>
+	<item type="DOCTYPE" id="FBV" uri="fbv.dtd"/>
+	<item type="DOCTYPE" id="FBVDIC" uri="fbvdic.dtd"/>
+	<item type="DOCTYPE" id="FBV-SAI" uri="fbv-sai.dtd"/>
+	<item type="DOCTYPE" id="PRAT-SAI" uri="prat-sai.dtd"/>
+	<item type="DOCTYPE" id="ANALYSE" uri="analyse.dtd"/>
+	<item type="DOCTYPE" id="SAISIE" uri="fbv-saisie.dtd"/>
+	<item type="DOCTYPE" id="FBVSOM" uri="fbvsom.dtd"/>
+	<item type="DOCTYPE" id="MEMSOM" uri="memsom.dtd"/>
+	<item type="DOCTYPE" id="RJ" uri="rj.dtd"/>
+	<item type="DOCTYPE" id="JPS" uri="jps.dtd"/>
+	<item type="DOCTYPE" id="JRPLG" uri="jrplg.dtd"/>
+	<item type="DOCTYPE" id="BRDA" uri="brda.dtd"/>
+	<item type="DOCTYPE" id="BPCI" uri="bpci.dtd"/>
+	<item type="DOCTYPE" id="BCF" uri="bcf.dtd"/>
+	<item type="DOCTYPE" id="BCFNEW" uri="bcfnew.dtd"/>
+	<item type="DOCTYPE" id="BPIM" uri="bpim.dtd"/>
+	<item type="DOCTYPE" id="BPRAT" uri="bprat.dtd"/>
+	<item type="DOCTYPE" id="BULL" uri="bull.dtd"/>
+	<item type="DOCTYPE" id="BVD" uri="bvd.dtd"/>
+	<item type="DOCTYPE" id="AUTREBULL.ESP" uri="autrebull.esp.dtd"/>
+	<item type="DOCTYPE" id="NEWSLETT" uri="newslett.dtd"/>
+	<item type="DOCTYPE" id="NETUPDATE" uri="netupdate.dtd"/>
+	<item type="DOCTYPE" id="CODESOC" uri="codesoc.dtd"/>
+	<item type="DOCTYPE" id="NEWCODESOC" uri="newcodesoc.dtd"/>
+	<item type="DOCTYPE" id="CSSOM" uri="cssom.dtd"/>
+	<item type="DOCTYPE" id="CODESC" uri="codesc.dtd"/>
+	<item type="DOCTYPE" id="CODESCPRO" uri="codescpro.dtd"/>
+	<item type="DOCTYPE" id="CODE-OPTJ" uri="code-optj.dtd"/>
+	<item type="DOCTYPE" id="CODESOCTBL" uri="codesoctbl.dtd"/>
+	<item type="DOCTYPE" id="CODESOM" uri="codesom.dtd"/>
+	<item type="DOCTYPE" id="CODE" uri="code.dtd"/>
+	<item type="DOCTYPE" id="NEWCODE" uri="newcode.dtd"/>
+	<item type="DOCTYPE" id="NEWCODEMAJ" uri="newcodemaj.dtd"/>
+	<item type="DOCTYPE" id="CODETYPO" uri="codetypo.dtd"/>
+	<item type="DOCTYPE" id="CODEMAJ" uri="codemaj.dtd"/>
+	<item type="DOCTYPE" id="FONDREF" uri="fondref.dtd"/>
+	<item type="DOCTYPE" id="ET" uri="et.dtd"/>
+	<item type="DOCTYPE" id="ETD" uri="etd.dtd"/>
+	<item type="DOCTYPE" id="ETD-OPTJ" uri="etd-optj.dtd"/>
+	<item type="DOCTYPE" id="FR" uri="fr.dtd"/>
+	<item type="DOCTYPE" id="FRCIBLE" uri="frcible.dtd"/>
+	<item type="DOCTYPE" id="FORMS" uri="forms.dtd"/>
+	<item type="DOCTYPE" id="ACTE" uri="forms_bu_Acte.dtd"/>
+	<item type="DOCTYPE" id="AV" uri="forms_bu_Avertissement.dtd"/>
+	<item type="DOCTYPE" id="COMMENT" uri="forms_bu_Commentaire.dtd"/>
+	<item type="DOCTYPE" id="CLAUSE" uri="forms_bu_Clause.dtd"/>
+	<item type="DOCTYPE" id="FORMSTRANS" uri="FORMSTRANS.dtd"/>
+	<item type="DOCTYPE" id="FORMS.F" uri="forms.theme.dtd"/>
+	<item type="DOCTYPE" id="TFR" uri="tfr.dtd"/>
+	<item type="DOCTYPE" id="MANUEL" uri="manuel.dtd"/>
+	<item type="DOCTYPE" id="MEM" uri="mem.dtd"/>
+	<item type="DOCTYPE" id="MEMSP" uri="memsp.dtd"/>
+	<item type="DOCTYPE" id="MEMESPECIAL" uri="memespecial.dtd"/>
+	<item type="DOCTYPE" id="MEME" uri="meme.dtd"/>
+	<item type="DOCTYPE" id="MEM-NEW" uri="mem-new.dtd"/>
+	<item type="DOCTYPE" id="MEM-SAI" uri="mem-sai.dtd"/>
+	<item type="DOCTYPE" id="MEMESPECIAL-SAI" uri="memespecial-sai.dtd"/>
+	<item type="DOCTYPE" id="MODIFS" uri="modifs.dtd"/>
+	<item type="DOCTYPE" id="TPMAJ" uri="tpmaj.dtd"/>
+	<item type="DOCTYPE" id="SERDIV" uri="serdiv.dtd"/>
+	<item type="DOCTYPE" id="MEMTBL" uri="memtbl.dtd"/>
+	<item type="DOCTYPE" id="PARTICULIER" uri="particulier.dtd"/>
+	<item type="DOCTYPE" id="PARTICULIER-SAI" uri="particulier-sai.dtd"/>
+	<item type="DOCTYPE" id="PCG" uri="pcg.dtd"/>
+	<item type="DOCTYPE" id="PRAT" uri="prat.dtd"/>
+	<item type="DOCTYPE" id="PRATNEW" uri="pratnew.dtd"/>
+	<item type="DOCTYPE" id="DYNAMEM" uri="dynamem.dtd"/>
+	<item type="DOCTYPE" id="DYNAMEMSP" uri="dynamemsp.dtd"/>
+	<item type="DOCTYPE" id="DYNAMEMESPECIAL" uri="dynamemespecial.dtd"/>
+	<item type="DOCTYPE" id="DYNAPRICE" uri="dynaprice.dtd"/>
+	<item type="DOCTYPE" id="DYNAMEM-NEW" uri="dynamem-new.dtd"/>
+	<item type="DOCTYPE" id="DYNAPRAT" uri="dynaprat.dtd"/>
+	<item type="DOCTYPE" id="DYNAPART" uri="dynapart.dtd"/>
+	<item type="DOCTYPE" id="DYNAPRATNEW" uri="dynapratnew.dtd"/>
+	<item type="DOCTYPE" id="TAREFFBV" uri="tareffbv.dtd"/>
+	<item type="DOCTYPE" id="TCB" uri="tcb.dtd"/>
+	<item type="DOCTYPE" id="TMETHO" uri="tmetho.dtd"/>
+	<item type="DOCTYPE" id="TMETHOFUS" uri="tmethofus.dtd"/>
+	<item type="DOCTYPE" id="TBFRO" uri="tbfro.dtd"/>
+	<item type="DOCTYPE" id="TBRDA" uri="tbrda.dtd"/>
+	<item type="DOCTYPE" id="TBPRAT" uri="tbprat.dtd"/>
+	<item type="DOCTYPE" id="TAREFFBV" uri="tareffbv.dtd"/>
+	<item type="DOCTYPE" id="TALPHA" uri="talpha.dtd"/>
+	<item type="DOCTYPE" id="THEME" uri="theme.dtd"/>
+	<item type="DOCTYPE" id="THEMETY" uri="themety.dtd"/>
+	<item type="DOCTYPE" id="STYLESHEET" uri="stylesheet.dtd"/>
+	<item type="DOCTYPE" id="TABSYN" uri="tabsyn.dtd"/>
+	<item type="DOCTYPE" id="SUPERTFR" uri="supertfr.dtd"/>
+	<item type="DOCTYPE" id="SUPERFR" uri="superfr.dtd"/>
+	<item type="DOCTYPE" id="SUPERBULL" uri="superbull.dtd"/>
+	<item type="DOCTYPE" id="SUPERBCF" uri="superbcf.dtd"/>
+	<item type="DOCTYPE" id="SUPERRJ" uri="superrj.dtd"/>
+	<item type="DOCTYPE" id="SUPERJPS" uri="superjps.dtd"/>
+	<item type="DOCTYPE" id="SUPERBRDA" uri="superbrda.dtd"/>
+	<item type="DOCTYPE" id="SUPERBPRAT" uri="superbprat.dtd"/>
+	<item type="DOCTYPE" id="SUPERFBV" uri="superfbv.dtd"/>
+	<item type="DOCTYPE" id="SUPERTMETHO" uri="supertmetho.dtd"/>
+	<item type="DOCTYPE" id="REFFOND" uri="reffond.dtd"/>
+	<item type="DOCTYPE" id="TALPHAG" uri="talphag.dtd"/>
+	<item type="DOCTYPE" id="TCHRONO" uri="tchrono.dtd"/>
+	<item type="DOCTYPE" id="TCHIFFRE" uri="tchiffre.dtd"/>
+	<item type="DOCTYPE" id="TALMEMG" uri="talmemg.dtd"/>
+	<item type="DOCTYPE" id="RENV" uri="renv.dtd"/>
+	<item type="DOCTYPE" id="ALPHAMEM" uri="alphamem.dtd"/>
+	<item type="DOCTYPE" id="ALPHAINV" uri="alphainv.dtd"/>
+	<item type="DOCTYPE" id="AMEMESP" uri="amemesp.dtd"/>
+	<item type="DOCTYPE" id="MEMSAISP" uri="memsaisp.dtd"/>
+	<item type="DOCTYPE" id="ALPHAMEM-NEW" uri="alphamem-new.dtd"/>
+	<item type="DOCTYPE" id="ALPHACOD" uri="alphacod.dtd"/>
+	<item type="DOCTYPE" id="ALCODINV" uri="alcodinv.dtd"/>
+	<item type="DOCTYPE" id="ALFBVINV" uri="alfbvinv.dtd"/>
+	<item type="DOCTYPE" id="TEXTCODI" uri="textcodi.dtd"/>
+	<item type="DOCTYPE" id="INVRENCS" uri="invrencs.dtd"/>
+	<item type="DOCTYPE" id="STYLESHEET" uri="fds.dtd"/>
+	<item type="DOCTYPE" id="BLOCK" uri="tpl8.dtd"/>
+	<item type="DOCTYPE" id="TYPO" uri="typo.dtd"/>
+	<item type="DOCTYPE" id="SOMMAIRE" uri="sommaire.dtd"/>
+	<item type="DOCTYPE" id="TMETEST" uri="tmetest.dtd"/>
+	<item type="DOCTYPE" id="TM95" uri="tm95.dtd"/>
+	<item type="DOCTYPE" id="SECTION" uri="section.dtd"/>
+	<item type="DOCTYPE" id="TABSYN" uri="tabsyn.dtd"/>
+	<item type="DOCTYPE" id="FLASHS" uri="flashs.dtd"/>
+	<item type="DOCTYPE" id="FLASHP" uri="flashp.dtd"/>
+	<item type="DOCTYPE" id="RULINK" uri="rulink.dtd"/>
+	<item type="DOCTYPE" id="XTRACT" uri="xtract.dtd"/>
+	<item type="DOCTYPE" id="NORMECNCC" uri="normecncc.dtd"/>
+	<item type="DOCTYPE" id="HTML" uri="html.dtd"/>
+	<item type="DOCTYPE" id="BULLIT" uri="bullit.dtd"/>
+	<item type="DOCTYPE" id="PRICE" uri="price.dtd"/>
+	<item type="DOCTYPE" id="COMPERIO" uri="comperio.dtd"/>
+	<item type="DOCTYPE" id="DOCS" uri="docs.dtd"/>
+	<item type="DOCTYPE" id="XFLASH" uri="xflash.dtd"/>
+	<item type="DOCTYPE" id="FLASH" uri="flash.dtd"/>
+	<item type="DOCTYPE" id="INF" uri="inf.dtd"/>
+	<item type="DOCTYPE" id="CHIFFRES" uri="chiffres.dtd"/>
+	<item type="DOCTYPE" id="INFO" uri="brda.dtd"/>
+	<item type="DOCTYPE" id="COM" uri="brda.dtd"/>
+	<item type="DOCTYPE" id="DECI" uri="deci.dtd"/>
+	<item type="DOCTYPE" id="TXSOURCE" uri="txsource.dtd"/>
+	<item type="DOCTYPE" id="SOURCE" uri="source.dtd"/>
+	<item type="DOCTYPE" id="IMPORT" uri="import.dtd"/>
+	<item type="DOCTYPE" id="CORRES" uri="corres.dtd"/>
+	<item type="DOCTYPE" id="CONTROLE" uri="controle.dtd"/>
+	<item type="DOCTYPE" id="BALMAP" uri="balmap.dtd"/>
+	<item type="DOCTYPE" id="MYHTM" uri="myhtm.dtd"/>
+	<item type="DOCTYPE" id="TEXTECOMP" uri="textecomp.dtd"/>
+	<item type="DOCTYPE" id="UPDATES" uri="updates.dtd"/>
+	<item type="DOCTYPE" id="DEC" uri="dec.dtd"/>
+	<item type="DOCTYPE" id="TABLESOURCES" uri="tablesources.dtd"/>
+	<item type="DOCTYPE" id="FORMSESP" uri="formsesp.dtd"/>
+	<item type="DOCTYPE" id="AGENDA" uri="agenda.dtd"/>
+	<item type="DOCTYPE" id="QUESTION" uri="question.dtd"/>
+	<item type="DOCTYPE" id="ENTSCHEIDUNG" uri="entscheidung.dtd"/>
+	<item type="DOCTYPE" id="DYNAENTSCHEIDUNG" uri="dynaentscheidung.dtd"/>
+	<item type="DOCTYPE" id="Entscheidung" uri="Entscheidung.dtd"/>
+	<item type="DOCTYPE" id="VA" uri="va.dtd"/>
+	<item type="DOCTYPE" id="DYNAVA" uri="dynava.dtd"/>
+	<item type="DOCTYPE" id="NORM" uri="norm.dtd"/>
+	<item type="DOCTYPE" id="DYNANORM" uri="dynanorm.dtd"/>
+	<item type="DOCTYPE" id="FRNEW" uri="frnew.dtd"/>
+	<item type="DOCTYPE" id="BEITRAG" uri="beitrag.dtd"/>
+	<item type="DOCTYPE" id="GENERIQUE-TAB" uri="generique-tab.dtd"/>
+	<item type="DOCTYPE" id="CODALLOZ" uri="CODALLOZ_sgml.DTD"/>
+	<item type="DOCTYPE" id="INDIC" uri="indic.dtd"/>
+	<item type="DOCTYPE" id="SN" uri="sn.dtd"/>
+  <item type="DOCTYPE" id="SNH" uri="snh.dtd"/>
+	<item type="DOCTYPE" id="TAG-OPTJ" uri="tag-optj.dtd"/>
+	<item type="DOCTYPE" id="LISTE" uri="liste.dtd"/>
+	<item type="DOCTYPE" id="DPFORM-OPTJ" uri="dpform-optj.dtd"/>
+	<item type="DOCTYPE" id="DPFORM2-OPTJ" uri="dpform2-optj.dtd"/>
+	<item type="DOCTYPE" id="AFORMSESP" uri="aformsesp.dtd"/>
+	<item type="DOCTYPE" id="BOFIP" uri="bofip.dtd"/>
+	<item type="DOCTYPE" id="P" uri="p.dtd"/>
+  <item type="DOCTYPE" id="TXTBLOC-OPTJ" uri="el/TXTBLOC-OPTJ"/>  
+</catalog>
