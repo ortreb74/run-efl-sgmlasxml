@@ -264,4 +264,8 @@
 	<item type="DOCTYPE" id="BOFIP" uri="bofip.dtd"/>
 	<item type="DOCTYPE" id="P" uri="p.dtd"/>
   <item type="DOCTYPE" id="TXTBLOC-OPTJ" uri="el/TXTBLOC-OPTJ"/>  
+  <item type="DOCTYPE" id="TXT-OPTJ" uri="el/txt-optj.dtd.canon"/>
+  <item type="DOCTYPE" id="CORNAFCC-OPTJ" uri="el/CORNAFCC-OPTJ"/>
+  <item type="DOCTYPE" id="CORNAFCC2008" uri="el/CORNAFCC2008"/>
+  <item type="DOCTYPE" id="ETD-OPTJ" uri="el/ETD-OPTJ"/>  
 </catalog>
