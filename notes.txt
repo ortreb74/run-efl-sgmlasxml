@@ -1,0 +1,51 @@
+comment est-ce que je nomme le package qui contient les classes principales ?
+
+bootstrap
+runable
+program
+
+java -cp /c/gh/run-efl/sgmlasxml/target/SgmlAsXml-0.00.00-SNAPSHOT-jar-with-dependencies.jar program.Sgml2Xml
+
+mkdir -p /c/app/sgmlAsXml/lib
+
+cp /c/gh/run-efl-sgmlasxml/target/*with-dependencies* /c/app/SgmlAsXml/lib
+
+java -cp "/c/app/sgmlAsXml/lib/*" program.Sgml2Xml "%1"
+
+- ajouter un bloc try catch
+- ajouter un paramètre par défaut
+* tester le drag & drop
+
+ça doit marcher
+par contre la conversion non
+
+quand je fais un drag & drop ou va être le fichier de sortie ?
+
+- embarquer les dtd dans le packaging
+
+cela va impliquer une modification de code
+
+SASgml.load("c:/dtd", "c:/catalog/el.xml");
+
+- il y a le problème que j'ai oublié : je ne suis pas en UTF-8
+
+SASgml deux chaînes tdPath catalogFilePath
+
+Elles sont passés en paramètre à la classe CatalogManager
+
+	CatalogManager.setDtdPath(dtdPath);
+		CatalogManager.load();
+		if (new File(catalogFilePath).exists()) {
+			CatalogManager.load(catalogFilePath);
+		}
+		Entities.load();
+		
+Il faut peut être changer cela : 
+
+buffer = new BufferedReader(new InputStreamReader(new FileInputStream(lFile), Charset.forName(encoding)));		
+
+la question c'est comment lire depuis le jar ?
+
+- gérer les include relatif ?
+
+qu'est ce qui peut faire qu'un AL va être suivi par un texte ?
