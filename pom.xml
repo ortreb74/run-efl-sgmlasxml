@@ -13,10 +13,16 @@
       <artifactId>Saxon-HE</artifactId>
       <version>9.7.0-4</version>
     </dependency>
+    <!-- pour avoir StringUtil -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.0</version>
+    </dependency>
   </dependencies>
   
   <build>
-    <defaultGoal>clean package</defaultGoal>
+    <defaultGoal>clean install</defaultGoal>
     <plugins>
       
       <plugin>

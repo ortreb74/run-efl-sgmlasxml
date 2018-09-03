@@ -1,5 +1,7 @@
 package sasgml.com.catalog;
 
+import runefl.casual.ConsoleOutput;
+
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.HashMap;

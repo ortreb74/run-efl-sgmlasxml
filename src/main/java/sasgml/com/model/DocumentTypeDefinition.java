@@ -11,6 +11,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import runefl.casual.ConsoleOutput;
+import sasgml.com.catalog.CatalogManager;
 import sasgml.com.exception.SASgmlException;
 import sasgml.com.handler.DTDHandler;
 import sasgml.com.log.LogManager;
@@ -167,6 +169,9 @@ public class DocumentTypeDefinition {
 			throws IOException, SASgmlException {
 		entities.arrange();
 
+		ConsoleOutput.writeWarning("DocumentTypeDefinition.loadAsSubset dirPath [" + dirPath + "]" + " systemId [" + systemId + "]");
+		ConsoleOutput.writeWarning("DocumentTypeDefinition.loadAsSubset taille de includes [" + includes.size() + "]");
+
 		// INCLUDE
 
 		for (String cEntityName : includes) {
@@ -177,12 +182,13 @@ public class DocumentTypeDefinition {
 				cEntity = entities.get(cEntityName.toUpperCase());
 			} else {
 				LogManager
-						.writeWarning("Impossible de trouver l'entité d'inclusion ["
+						.writeWarning("Impossible de trouver l'entitÃ© d'inclusion ["
 								+ cEntityName
 								+ "] dans le subset du document SGML.");
 			}
 
 			if (cEntity != null) {
+
 				if (cEntity.getModeEnum().equals(ModeEnum.SYSTEM)) {
 					CaseInsensitiveFileSearcher iCaseInsensitiveFile = new CaseInsensitiveFileSearcher(
 							dirPath + "/" + cEntity.getSysId());
@@ -220,8 +226,7 @@ public class DocumentTypeDefinition {
 				return false;
 			}
 		} else {
-			LogManager
-					.writeWarning("Impossible de trouver le fichier DTDcar le SYSTEM ID est non définit.");
+			ConsoleOutput.writeError("Impossible de charger complÃ¨tement la DTD : il y a une dÃ©pendance non rÃ©solue");
 			return false;
 		}
 
@@ -241,12 +246,13 @@ public class DocumentTypeDefinition {
 			DTDParser parser = new DTDParser();
 			parser.setDTDHandler(new DTDHandler());
 
+
 			parser.parse(pFile);
 
 			String lDirPath = pFile.getParentFile().getAbsolutePath();
 
-			DocumentTypeDefinition cDtdDocument = parser.getDTDHandler()
-					.getDtdDocument();
+			DocumentTypeDefinition cDtdDocument = parser.getDTDHandler().getDtdDocument();
+			ConsoleOutput.writeWarning("DocumentTypeDefinition.load nombre d'inclusions lus dans la DTD [" + cDtdDocument.getIncludes().size() + "]");
 
 			cDtdDocument.getEntities().arrange();
 
@@ -262,7 +268,7 @@ public class DocumentTypeDefinition {
 							cEntityName.toUpperCase());
 				} else {
 					LogManager
-							.writeWarning("Impossible de trouver l'entité d'inclusion ["
+							.writeWarning("Impossible de trouver l'entitï¿½ d'inclusion ["
 									+ cEntityName
 									+ "] dans le fichier ["
 									+ pFile.getAbsolutePath() + "]");
@@ -284,6 +290,15 @@ public class DocumentTypeDefinition {
 											+ "/"
 											+ cEntity.getSysId() + "].");
 						}
+					}
+
+					if (cEntity.getModeEnum().equals(ModeEnum.PUBLIC)) {
+						ConsoleOutput.writeWarning("Recherche d'inclusion name [ " + cEntity.getName() + " ] type [ " + cEntity.getType() + " ] pubId [ " + cEntity.getPubId() + " ] sysId [ " + cEntity.getSysId() + "]");
+						ConsoleOutput.writeWarning("CatalogManager(PUBLIC," + cEntity.getSysId() + ") [ " + CatalogManager.get("PUBLIC",cEntity.getSysId()) + " ]");
+						File includeFile = new File("c:/dtd/" + CatalogManager.get("PUBLIC",cEntity.getSysId()));
+						DocumentTypeDefinition iDtdDocument = new DocumentTypeDefinition();
+						iDtdDocument.load(includeFile);
+						cDtdDocument.merge(iDtdDocument);
 					}
 				}
 			}

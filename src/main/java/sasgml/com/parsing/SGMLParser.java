@@ -33,6 +33,7 @@ public class SGMLParser extends DTDParser {
 		skipWhiteSpace();
 		if (hasNextIgnoreCase(Token.DOCTYPE_START)) {
 			super.parseToken();
+
 			sGMLHandler.doctype(dTDHandler.getDtdName(),
 					dTDHandler.getDtdType(), dTDHandler.getSysId(),
 					dTDHandler.getPubId());
@@ -88,8 +89,8 @@ public class SGMLParser extends DTDParser {
 				parseTextToken();
 			}
 			if (charIndex == realIndex) {
-				throw new SASgmlException("Caractère [" + getCharAtIndex(0)
-						+ "] inattendu à la position [" + realIndex + "]");
+				throw new SASgmlException("Caractï¿½re [" + getCharAtIndex(0)
+						+ "] inattendu ï¿½ la position [" + realIndex + "]");
 			}
 		}
 	}
@@ -116,13 +117,13 @@ public class SGMLParser extends DTDParser {
 					nextCharacter();
 				} else {
 					throw new SASgmlException(
-							"Caractère ["
+							"Caractï¿½re ["
 									+ c
-									+ "] inattendu à la position ["
+									+ "] inattendu ï¿½ la position ["
 									+ realIndex
-									+ "] : l'élement ["
+									+ "] : l'ï¿½lement ["
 									+ grpName
-									+ "] dans ce NAMEGROUP doit être suivi de ')' ou de ('&',',','|') !");
+									+ "] dans ce NAMEGROUP doit ï¿½tre suivi de ')' ou de ('&',',','|') !");
 				}
 				skipWhiteSpace();
 			}
@@ -163,9 +164,9 @@ public class SGMLParser extends DTDParser {
 					nextCharacter();
 					match = true;
 				} else {
-					throw new SASgmlException("Caractère [" + c
-							+ "] inattendu à la position [" + realIndex
-							+ "] : l'élement [" + name
+					throw new SASgmlException("Caractï¿½re [" + c
+							+ "] inattendu ï¿½ la position [" + realIndex
+							+ "] : l'ï¿½lement [" + name
 							+ "] doit se terminer par '/>' ou par '>' !");
 				}
 			} else {
@@ -188,8 +189,8 @@ public class SGMLParser extends DTDParser {
 					index++;
 				}
 				if (charIndex == realIndex) {
-					throw new SASgmlException("Caractère [" + c
-							+ "] inattendu à la position [" + realIndex
+					throw new SASgmlException("Caractï¿½re [" + c
+							+ "] inattendu ï¿½ la position [" + realIndex
 							+ "] lors du parse de l'attribut [" + attName + "]");
 				}
 			}
@@ -215,13 +216,13 @@ public class SGMLParser extends DTDParser {
 					nextCharacter();
 				} else {
 					throw new SASgmlException(
-							"Caractère ["
+							"Caractï¿½re ["
 									+ c
-									+ "] inattendu à la position ["
+									+ "] inattendu ï¿½ la position ["
 									+ realIndex
-									+ "] : l'élement ["
+									+ "] : l'ï¿½lement ["
 									+ grpName
-									+ "] dans ce NAMEGROUP doit être suivi de ')' ou de ('&',',','|') !");
+									+ "] dans ce NAMEGROUP doit ï¿½tre suivi de ')' ou de ('&',',','|') !");
 				}
 				skipWhiteSpace();
 			}
@@ -237,9 +238,9 @@ public class SGMLParser extends DTDParser {
 			}
 			nextCharacters(1);
 		} else {
-			throw new SASgmlException("Caractère [" + c
-					+ "] inattendu à la position [" + realIndex
-					+ "] : l'élement [" + name + "] doit se terminer par '>' !");
+			throw new SASgmlException("Caractï¿½re [" + c
+					+ "] inattendu ï¿½ la position [" + realIndex
+					+ "] : l'ï¿½lement [" + name + "] doit se terminer par '>' !");
 		}
 	}
 

@@ -72,9 +72,9 @@ public class DTDParser extends Parser {
 							nextCharacter();
 							parseCommentToken();
 						} else {
-							throw new SASgmlException("Caractère ["
+							throw new SASgmlException("CaractÃ¨re ["
 									+ getCharAtIndex(0)
-									+ "] inattendu à la position [" + realIndex
+									+ "] inattendu Ã  la position [" + realIndex
 									+ "]");
 						}
 					} else if (hasNextIgnoreCase(Token.ENTITY)) {
@@ -94,22 +94,22 @@ public class DTDParser extends Parser {
 						nextCharacters(7);
 						parseElementToken();
 					} else {
-						throw new SASgmlException("Caractère ["
+						throw new SASgmlException("CaractÃ¨re ["
 								+ getCharAtIndex(0)
-								+ "] inattendu à la position [" + realIndex
+								+ "] inattendu Ã  la position [" + realIndex
 								+ "]");
 					}
 				} else {
-					throw new SASgmlException("Caractère [" + getCharAtIndex(0)
-							+ "] inattendu à la position [" + realIndex
-							+ "] pour la définition de la DTD !");
+					throw new SASgmlException("Caractï¿½re [" + getCharAtIndex(0)
+							+ "] inattendu ï¿½ la position [" + realIndex
+							+ "] pour la dï¿½finition de la DTD !");
 				}
 			} else if (c == Token.RIGTH_SQUARE_BRACKET) {
 				break;
 			} else {
-				throw new SASgmlException("Caractère [" + getCharAtIndex(0)
-						+ "] inattendu à la position [" + realIndex
-						+ "] pour la définition de la DTD !");
+				throw new SASgmlException("Caractï¿½re [" + getCharAtIndex(0)
+						+ "] inattendu ï¿½ la position [" + realIndex
+						+ "] pour la dï¿½finition de la DTD !");
 			}
 		}
 	}
@@ -152,9 +152,9 @@ public class DTDParser extends Parser {
 				eName = Token.DIEZ + Token.DEFAULT;
 				nextCharacters(7);
 			} else {
-				throw new SASgmlException("Caractère [" + getCharAtIndex(0)
-						+ "] inattendu à la position [" + realIndex
-						+ "] pour la déclaration de l'entité !");
+				throw new SASgmlException("Caractï¿½re [" + getCharAtIndex(0)
+						+ "] inattendu ï¿½ la position [" + realIndex
+						+ "] pour la dï¿½claration de l'entitï¿½ !");
 			}
 		} else {
 			eName = parseName();
@@ -284,21 +284,21 @@ public class DTDParser extends Parser {
 				if (c == Token.GREAT_THAN) {
 					nextCharacter();
 				} else {
-					throw new SASgmlException("Caractère [" + getCharAtIndex(0)
-							+ "] inattendu à la position [" + realIndex
-							+ "] pour la déclaration du DOCTYPE !");
+					throw new SASgmlException("Caractï¿½re [" + getCharAtIndex(0)
+							+ "] inattendu ï¿½ la position [" + realIndex
+							+ "] pour la dï¿½claration du DOCTYPE !");
 				}
 			} else {
-				throw new SASgmlException("Caractère [" + getCharAtIndex(0)
-						+ "] inattendu à la position [" + realIndex
-						+ "] pour la déclaration du DOCTYPE !");
+				throw new SASgmlException("Caractï¿½re [" + getCharAtIndex(0)
+						+ "] inattendu ï¿½ la position [" + realIndex
+						+ "] pour la dï¿½claration du DOCTYPE !");
 			}
 		} else if (c == Token.GREAT_THAN) {
 			nextCharacter();
 		} else {
-			throw new SASgmlException("Caractère [" + getCharAtIndex(0)
-					+ "] inattendu à la position [" + realIndex
-					+ "] pour la déclaration du DOCTYPE !");
+			throw new SASgmlException("Caractï¿½re [" + getCharAtIndex(0)
+					+ "] inattendu ï¿½ la position [" + realIndex
+					+ "] pour la dï¿½claration du DOCTYPE !");
 		}
 
 		dTDHandler.doctype(dtdName, dtdType, sysid, pubid);

@@ -17,6 +17,7 @@ import javax.xml.transform.dom.DOMResult;
 
 import org.w3c.dom.Document;
 
+import runefl.casual.ConsoleOutput;
 import sasgml.com.catalog.CatalogManager;
 import sasgml.com.exception.SASgmlException;
 import sasgml.com.log.LogManager;
@@ -95,7 +96,7 @@ public class SGMLHandler implements ISGMLHandler {
 					new OutputStreamWriter(new FileOutputStream(lOutFile),
 							"utf-8"));
 		} catch (Exception e) {
-			writeError("Erreur lors de la création du fichier [" + pFilePath
+			writeError("Erreur lors de la crÃ©ation du fichier [" + pFilePath
 					+ "] : " + e.getMessage());
 		}
 	}
@@ -106,7 +107,7 @@ public class SGMLHandler implements ISGMLHandler {
 			out = XMLOutputFactory.newInstance().createXMLStreamWriter(
 					pStringWriter);
 		} catch (Exception e) {
-			writeError("Erreur lors de la création du flux : " + e.getMessage());
+			writeError("Erreur lors de la crÃ©ation du flux : " + e.getMessage());
 		}
 	}
 
@@ -117,7 +118,7 @@ public class SGMLHandler implements ISGMLHandler {
 			DOMResult result = new DOMResult(lDocument);
 			out = XMLOutputFactory.newInstance().createXMLStreamWriter(result);
 		} catch (Exception e) {
-			writeError("Erreur lors de la création du document : "
+			writeError("Erreur lors de la crï¿½ation du document : "
 					+ e.getMessage());
 		}
 	}
@@ -132,7 +133,7 @@ public class SGMLHandler implements ISGMLHandler {
 			}
 			out.close();
 		} catch (XMLStreamException e) {
-			writeError("Erreur lors de l'écriture : " + e.getMessage());
+			writeError("Erreur lors de l'Ã©criture : " + e.getMessage());
 		}
 
 		idrefs.removeAll(ids);
@@ -154,7 +155,7 @@ public class SGMLHandler implements ISGMLHandler {
 			out.writeStartDocument("UTF-8", "1.0");
 			out.flush();
 		} catch (XMLStreamException e) {
-			writeError("Erreur lors de l'écriture : " + e.getMessage());
+			writeError("Erreur lors de l'Ã©criture : " + e.getMessage());
 		}
 	}
 
@@ -249,7 +250,7 @@ public class SGMLHandler implements ISGMLHandler {
 
 							} catch (XMLStreamException e) {
 								LogManager
-										.writeError("Erreur lors de l'écriture : "
+										.writeError("Erreur lors de l'Ã©criture : "
 												+ e.getMessage());
 							}
 
@@ -263,7 +264,7 @@ public class SGMLHandler implements ISGMLHandler {
 
 			/*
 			 * Cas ou le parent est un empty tag : tentative de fermer le parent
-			 * qui est en réaité l'element precedent
+			 * qui est en rÃ©alitÃ© l'element precedent
 			 */
 			if (!accepted) {
 				String pQName = ancestors.getLast();
@@ -275,7 +276,7 @@ public class SGMLHandler implements ISGMLHandler {
 							out.writeEndElement();
 						} catch (XMLStreamException e) {
 							LogManager
-									.writeError("Erreur lors de l'écriture : "
+									.writeError("Erreur lors de l'Ã©criture : "
 											+ e.getMessage());
 						}
 						ancestorsObservers.removeLast();
@@ -299,7 +300,7 @@ public class SGMLHandler implements ISGMLHandler {
 					message += " dans le fichier [" + systemId + "]";
 				}
 				throw new SASgmlException(message + " : Element [" + qName
-						+ "] inattendu après ["
+						+ "] inattendu aprï¿½s ["
 						+ pDTDElementObserver.getState().getName() + "] dans ["
 						+ ancestors.getLast() + "]");
 			}
@@ -333,17 +334,17 @@ public class SGMLHandler implements ISGMLHandler {
 						out.writeAttribute(cAttName, cAttValue);
 					}
 					LogManager
-							.writeWarning("Impossible de trouver la définition de la liste des attributs pour l'element ["
+							.writeWarning("Impossible de trouver la dï¿½finition de la liste des attributs pour l'element ["
 									+ qName + "]");
 				}
 			} catch (XMLStreamException e) {
-				writeError("Erreur lors de l'écriture : " + e.getMessage());
+				writeError("Erreur lors de l'Ã©criture : " + e.getMessage());
 			}
 			if (lDTDElement.isEmpty()) {
 				try {
 					out.writeEndElement();
 				} catch (XMLStreamException e) {
-					writeError("Erreur lors de l'écriture : " + e.getMessage());
+					writeError("Erreur lors de l'Ã©criture : " + e.getMessage());
 				}
 			} else {
 				ancestors.add(qName);
@@ -358,7 +359,7 @@ public class SGMLHandler implements ISGMLHandler {
 					out.writeAttribute(cAttName, cAttValue);
 				}
 			} catch (XMLStreamException e) {
-				writeError("Erreur lors de l'écriture : " + e.getMessage());
+				writeError("Erreur lors de l'Ã©criture : " + e.getMessage());
 			}
 
 			ancestors.add(qName);
@@ -375,7 +376,7 @@ public class SGMLHandler implements ISGMLHandler {
 			out.flush();
 		} catch (XMLStreamException e) {
 			// TODO Auto-generated catch block
-			writeError("Erreur lors de l'écriture : " + e.getMessage());
+			writeError("Erreur lors de l'ï¿½criture : " + e.getMessage());
 		}
 
 	}
@@ -528,7 +529,7 @@ public class SGMLHandler implements ISGMLHandler {
 								+ "] pour l'attribut [" + cAttName
 								+ "] de l'element [" + qName + "] de type ["
 								+ cAttribute.getTypeEnum().toString()
-								+ "] est dupliquée !");
+								+ "] est dupliquï¿½e !");
 					}
 					break;
 				case IDREF:
@@ -580,7 +581,7 @@ public class SGMLHandler implements ISGMLHandler {
 										+ qName
 										+ "] de type ["
 										+ cAttribute.getTypeEnum().toString()
-										+ "] n'est pas une NOTATION déclarée dans la liste des valeurs possible !");
+										+ "] n'est pas une NOTATION dï¿½clarï¿½e dans la liste des valeurs possible !");
 					} else {
 						// Ecriture de l'euivalent en json
 						// Notation lDtdNotation =
@@ -640,7 +641,7 @@ public class SGMLHandler implements ISGMLHandler {
 				throw new SASgmlException(
 						"Element ["
 								+ qName
-								+ "] est EMPTY : la fermeture de cet élement est interdite !");
+								+ "] est EMPTY : la fermeture de cet ï¿½lement est interdite !");
 			}
 		}
 
@@ -657,7 +658,7 @@ public class SGMLHandler implements ISGMLHandler {
 					try {
 						out.writeEndElement();
 					} catch (XMLStreamException e) {
-						writeError("Erreur lors de l'écriture : "
+						writeError("Erreur lors de l'ï¿½criture : "
 								+ e.getMessage());
 					}
 					ancestors.removeLast();
@@ -679,7 +680,7 @@ public class SGMLHandler implements ISGMLHandler {
 						message
 								+ " : Element ["
 								+ lastQName
-								+ "] n'a pas pu être fermé avant la fermeture de l'element ["
+								+ "] n'a pas pu ï¿½tre fermï¿½ avant la fermeture de l'element ["
 								+ qName + "]");
 			}
 		}
@@ -695,18 +696,18 @@ public class SGMLHandler implements ISGMLHandler {
 			try {
 				out.writeEndElement();
 			} catch (XMLStreamException e) {
-				writeError("Erreur lors de l'écriture : " + e.getMessage());
+				writeError("Erreur lors de l'ï¿½criture : " + e.getMessage());
 			}
 
 		} else {
-			throw new SASgmlException("Erreur : la fermeture de  l'élement ["
-					+ qName + "] n'est pas autorisée à ce niveau ! ");
+			throw new SASgmlException("Erreur : la fermeture de  l'ï¿½lement ["
+					+ qName + "] n'est pas autorisï¿½e ï¿½ ce niveau ! ");
 		}
 
 		try {
 			out.flush();
 		} catch (XMLStreamException e) {
-			writeError("Erreur lors de l'écriture : " + e.getMessage());
+			writeError("Erreur lors de l'ï¿½criture : " + e.getMessage());
 		}
 
 		// LogManager
@@ -755,7 +756,7 @@ public class SGMLHandler implements ISGMLHandler {
 			}
 
 			if (!accepted) {
-				writeWarning("Text [" + text + "] inattendu après ["
+				writeWarning("Text [" + text + "] inattendu aprï¿½s ["
 						+ pDTDElementObserver.getState().getName() + "] dans ["
 						+ ancestors.getLast() + "]");
 			}
@@ -766,7 +767,7 @@ public class SGMLHandler implements ISGMLHandler {
 			out.flush();
 
 		} catch (XMLStreamException e) {
-			writeError("Erreur lors de l'écriture : " + e.getMessage());
+			writeError("Erreur lors de l'ï¿½criture : " + e.getMessage());
 		}
 	}
 
@@ -775,7 +776,7 @@ public class SGMLHandler implements ISGMLHandler {
 		try {
 			out.writeComment(text);
 		} catch (XMLStreamException e) {
-			writeError("Erreur lors de l'écriture : " + e.getMessage());
+			writeError("Erreur lors de l'ï¿½criture : " + e.getMessage());
 		}
 	}
 
@@ -802,7 +803,7 @@ public class SGMLHandler implements ISGMLHandler {
 	public void doctype(String name, String type, String sysid, String pubid)
 			throws SASgmlException {
 
-		// WriteWarning("Detection du DOCTYPE [" + name + "]");
+		ConsoleOutput.writeWarning("SGMLHandler.doctype name [" + name + "]" + " type [" + type + "]" + " sysid [" + sysid + "]" + " pubid [" + pubid + "]");
 
 		String dtdSystemId = null;
 
@@ -830,7 +831,7 @@ public class SGMLHandler implements ISGMLHandler {
 					CatalogManager.getDtdPath(), dtdSystemId);
 		} catch (IOException e) {
 			writeWarning("Le chargement de la DTD avec SYSTEM ID ["
-					+ dtdSystemId + "] a échoué : " + e.getMessage());
+					+ dtdSystemId + "] a Ã©chouÃ© : " + e.getMessage());
 		}
 		this.dtdSystemId = dtdSystemId;
 		rootDtdName = name;
@@ -845,7 +846,7 @@ public class SGMLHandler implements ISGMLHandler {
 			try {
 				out.writeCData(data);
 			} catch (XMLStreamException e) {
-				writeError("Erreur lors de l'écriture : " + e.getMessage());
+				writeError("Erreur lors de l'ï¿½criture : " + e.getMessage());
 			}
 		}
 	}
@@ -856,7 +857,7 @@ public class SGMLHandler implements ISGMLHandler {
 		try {
 			out.writeProcessingInstruction("SASgml-xml", content);
 		} catch (XMLStreamException e) {
-			writeError("Erreur lors de l'écriture : " + e.getMessage());
+			writeError("Erreur lors de l'ï¿½criture : " + e.getMessage());
 		}
 
 	}

@@ -31,8 +31,8 @@ public class AttListParser extends Parser {
 				nextCharacters(8);
 				isNotation = true;
 			} else {
-				throw new SASgmlException("Caractère [" + getCharAtIndex(0)
-						+ "] inattendu à la position [" + realIndex
+				throw new SASgmlException("Caractï¿½re [" + getCharAtIndex(0)
+						+ "] inattendu ï¿½ la position [" + realIndex
 						+ "] : le mot clef 'NOTATION' est attendu !");
 			}
 		}
@@ -151,7 +151,9 @@ public class AttListParser extends Parser {
 		if (getCharAtIndex(0) == Token.DIEZ) {
 			nextCharacter();
 			String type = parseName();
-			if (type.equals(Token.REQUIRED) || type.equals(Token.IMPLIED)
+			if (type.toUpperCase().equals("IMPLIED")) {
+				return "#IMPLIED";
+			} else if (type.equals(Token.REQUIRED) || type.equals(Token.IMPLIED)
 					|| type.equals(Token.CURRENT) || type.equals(Token.CONREF)) {
 				return '#' + type;
 			} else if (type.equals(Token.FIXED)) {
@@ -159,7 +161,7 @@ public class AttListParser extends Parser {
 				return '#' + type + ' ' + parseValue();
 			} else {
 				throw new SASgmlException("La chaine [" + type
-						+ "] ne représente pas un type DEFAULT  valide !");
+						+ "] ne reprï¿½sente pas un type DEFAULT  valide !");
 			}
 		} else {
 			return parseValue();

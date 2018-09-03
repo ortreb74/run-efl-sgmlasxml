@@ -1,5 +1,6 @@
 package sasgml.com.handler;
 
+import runefl.casual.ConsoleOutput;
 import sasgml.com.exception.SASgmlException;
 import sasgml.com.log.LogManager;
 import sasgml.com.model.AttList;
@@ -54,7 +55,7 @@ public class DTDHandler implements IDTDHandler {
 
 		dtdDocument.addEntity(entity);
 
-		// LogManager.WriteInfo("Detection de l'entité ["
+				// LogManager.WriteInfo("Detection de l'entitï¿½ ["
 		// + entity.getTextContent() + "]");
 
 	}
@@ -97,7 +98,6 @@ public class DTDHandler implements IDTDHandler {
 
 	@Override
 	public void includeEntity(String entityName) throws SASgmlException {
-		// TODO Auto-generated method stub
 		dtdDocument.addInclude(entityName);
 	}
 
