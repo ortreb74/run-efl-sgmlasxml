@@ -8,7 +8,7 @@ public class CommandLineSgml2Xml extends CommandLine {
         super(args);
 
         defaultSet("dtdPath", "c:/dtd");
-        defaultSet("catalogFilePath", "c:/catalog/catalog-el.xml");
+        defaultSet("catalogFilePath", "c:/catalog/catalog-els.xml");
     }
 
     @Override

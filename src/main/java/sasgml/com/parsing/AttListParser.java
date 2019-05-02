@@ -111,8 +111,8 @@ public class AttListParser extends Parser {
 					|| valType.equals(Token.IDREFS)
 					|| valType.equals(Token.IDREF) || valType.equals(Token.ID)
 					|| valType.equals(Token.ENTITIES)
-					|| valType.equals(Token.ENTITY)
-					|| valType.equals(Token.CDATA)) {
+					|| valType.equalsIgnoreCase(Token.ENTITY)
+					|| valType.equalsIgnoreCase(Token.CDATA)) {
 				return valType;
 			} else {
 				throw new SASgmlException(

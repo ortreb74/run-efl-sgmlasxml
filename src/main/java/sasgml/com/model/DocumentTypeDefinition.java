@@ -252,7 +252,7 @@ public class DocumentTypeDefinition {
 			String lDirPath = pFile.getParentFile().getAbsolutePath();
 
 			DocumentTypeDefinition cDtdDocument = parser.getDTDHandler().getDtdDocument();
-			ConsoleOutput.writeWarning("DocumentTypeDefinition.load nombre d'inclusions lus dans la DTD [" + cDtdDocument.getIncludes().size() + "]");
+			ConsoleOutput.writeWarning("DocumentTypeDefinition.load nombre d'inclusions lus dans la DTD [" + pFile.getAbsolutePath() + "] [" + cDtdDocument.getIncludes().size() + "]");
 
 			cDtdDocument.getEntities().arrange();
 
@@ -293,9 +293,7 @@ public class DocumentTypeDefinition {
 					}
 
 					if (cEntity.getModeEnum().equals(ModeEnum.PUBLIC)) {
-						ConsoleOutput.writeWarning("Recherche d'inclusion name [ " + cEntity.getName() + " ] type [ " + cEntity.getType() + " ] pubId [ " + cEntity.getPubId() + " ] sysId [ " + cEntity.getSysId() + "]");
-						ConsoleOutput.writeWarning("CatalogManager(PUBLIC," + cEntity.getSysId() + ") [ " + CatalogManager.get("PUBLIC",cEntity.getSysId()) + " ]");
-						File includeFile = new File("c:/dtd/" + CatalogManager.get("PUBLIC",cEntity.getSysId()));
+						File includeFile = new File(CatalogManager.getDtdPath() + CatalogManager.get("PUBLIC",cEntity.getSysId()));
 						DocumentTypeDefinition iDtdDocument = new DocumentTypeDefinition();
 						iDtdDocument.load(includeFile);
 						cDtdDocument.merge(iDtdDocument);

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import runefl.casual.ConsoleOutput;
 import sasgml.com.exception.SASgmlException;
 import sasgml.com.handler.SGMLHandler;
 import sasgml.com.model.Attribute;
@@ -31,7 +32,9 @@ public class SGMLParser extends DTDParser {
 
 	public void parseToken() throws SASgmlException {
 		skipWhiteSpace();
+		ConsoleOutput.write("parseToken");
 		if (hasNextIgnoreCase(Token.DOCTYPE_START)) {
+			ConsoleOutput.write("hasNextIgnoreCase(Token.DOCTYPE_START)");
 			super.parseToken();
 
 			sGMLHandler.doctype(dTDHandler.getDtdName(),

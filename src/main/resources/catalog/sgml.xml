@@ -156,7 +156,7 @@
 	<item type="DOCTYPE" id="PCG" uri="pcg.dtd"/>
 	<item type="DOCTYPE" id="PRAT" uri="prat.dtd"/>
 	<item type="DOCTYPE" id="PRATNEW" uri="pratnew.dtd"/>
-	<item type="DOCTYPE" id="DYNAMEM" uri="dynamem.dtd"/>
+	<item type="DOCTYPE" id="DYNAMEM" uri="efl/dynamem.dtd"/>
 	<item type="DOCTYPE" id="DYNAMEMSP" uri="dynamemsp.dtd"/>
 	<item type="DOCTYPE" id="DYNAMEMESPECIAL" uri="dynamemespecial.dtd"/>
 	<item type="DOCTYPE" id="DYNAPRICE" uri="dynaprice.dtd"/>
@@ -259,7 +259,7 @@
 	<item type="DOCTYPE" id="TAG-OPTJ" uri="tag-optj.dtd"/>
 	<item type="DOCTYPE" id="LISTE" uri="liste.dtd"/>
 	<item type="DOCTYPE" id="DPFORM-OPTJ" uri="dpform-optj.dtd"/>
-	<item type="DOCTYPE" id="DPFORM2-OPTJ" uri="dpform2-optj.dtd"/>
+  <item type="DOCTYPE" id="DPFORM2-OPTJ" uri="el/DPFORM2-OPTJ"/>
 	<item type="DOCTYPE" id="AFORMSESP" uri="aformsesp.dtd"/>
 	<item type="DOCTYPE" id="BOFIP" uri="bofip.dtd"/>
 	<item type="DOCTYPE" id="P" uri="p.dtd"/>
@@ -267,5 +267,5 @@
   <item type="DOCTYPE" id="TXT-OPTJ" uri="el/txt-optj.dtd.canon"/>
   <item type="DOCTYPE" id="CORNAFCC-OPTJ" uri="el/CORNAFCC-OPTJ"/>
   <item type="DOCTYPE" id="CORNAFCC2008" uri="el/CORNAFCC2008"/>
-  <item type="DOCTYPE" id="ETD-OPTJ" uri="el/ETD-OPTJ"/>  
+  <item type="DOCTYPE" id="ETD-OPTJ" uri="el/ETD-OPTJ"/>
 </catalog>

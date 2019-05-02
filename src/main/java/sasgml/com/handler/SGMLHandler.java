@@ -827,8 +827,11 @@ public class SGMLHandler implements ISGMLHandler {
 
 		try {
 			idDocumentTypeDefinition = subDTDHandler.getDtdDocument();
-			isDtdLoaded = idDocumentTypeDefinition.loadAsSubset(
-					CatalogManager.getDtdPath(), dtdSystemId);
+			String relativeLocation = CatalogManager.get("SYSTEM",dtdSystemId);
+			if (relativeLocation == null) {
+				ConsoleOutput.stopOnError("Impossible de trouver l'ID [" + dtdSystemId + "] de type SYSTEM dans le catalogue");
+			}
+			isDtdLoaded = idDocumentTypeDefinition.loadAsSubset(CatalogManager.getDtdPath(), relativeLocation);
 		} catch (IOException e) {
 			writeWarning("Le chargement de la DTD avec SYSTEM ID ["
 					+ dtdSystemId + "] a échoué : " + e.getMessage());
